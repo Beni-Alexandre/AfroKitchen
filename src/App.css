@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+html {
+  font-family: "Inter", "serif";
+  font-optical-sizing: "auto";
+  font-weight: "900";
+  font-style: "normal";
+}
