@@ -129,12 +129,7 @@ function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      {/* <div
-        className="container mx-auto px-4 text-center"
-        style={{ backgroundImage: "url('./img/Afrokitchenpic001.jpg')" }}
-      >
-        <h1 className="text-white text-9xl">AfroKitchen</h1>
-      </div> */}
+
       <section
         id="home"
         className="bg-green-50 py-20 mt-17"
