@@ -1,4 +1,5 @@
 import { Card, CardContent, CardFooter } from "./ui/card";
+// import ScrollAnimation from "react-animate-on-scroll";
 interface Product {
   id: number;
   name: string;
@@ -10,6 +11,7 @@ interface Product {
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
+    // <ScrollAnimation animateIn="fadeIn">
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
       <img
         src={product.image}
@@ -30,5 +32,6 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-sm text-gray-600">Contact us to order!</p>
       </CardFooter>
     </Card>
+    // </ScrollAnimation>
   );
 }

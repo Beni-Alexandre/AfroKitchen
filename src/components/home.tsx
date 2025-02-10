@@ -2,6 +2,7 @@ import Footer from "./footer";
 import Header from "./header";
 import ProductCard from "./ProductCard";
 import WhatsAppLink from "./WhatsAppLink";
+
 const products = [
   {
     id: 1,
@@ -9,7 +10,7 @@ const products = [
     price: 10,
     quantity: "200g",
     ingredients: "Paprika, Cumin, Thyme, Garlic powder, Ginger, Chili flakes",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/Afrokitchenpic001.jpg",
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const products = [
     price: 12,
     quantity: "150g",
     ingredients: "Peanut powder, Cayenne pepper, Ginger, Garlic, Onion powder",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/poivrenoir01.jpg",
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const products = [
     price: 7.99,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/thym01.jpg",
   },
   {
     id: 4,
@@ -33,7 +34,7 @@ const products = [
     price: 15,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/romarin01.jpg",
   },
   {
     id: 5,
@@ -41,7 +42,7 @@ const products = [
     price: 20,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/cannelle01.jpg",
   },
   {
     id: 6,
@@ -49,7 +50,7 @@ const products = [
     price: 55,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/pimmentrouge01.jpg",
   },
   {
     id: 7,
@@ -57,7 +58,7 @@ const products = [
     price: 65,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/cannelle01.jpg",
   },
   {
     id: 8,
@@ -65,7 +66,7 @@ const products = [
     price: 45,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/Afrokitchenpic001.jpg",
   },
   {
     id: 9,
@@ -73,7 +74,7 @@ const products = [
     price: 40,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/thym01.jpg",
   },
   {
     id: 10,
@@ -81,7 +82,7 @@ const products = [
     price: 30,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/romarin01.jpg",
   },
   {
     id: 11,
@@ -89,7 +90,7 @@ const products = [
     price: 70,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/garlic01.jpg",
   },
   {
     id: 12,
@@ -97,7 +98,7 @@ const products = [
     price: 7,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/poudre01.jpg",
   },
   {
     id: 13,
@@ -105,7 +106,7 @@ const products = [
     price: 9,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/badiane01.jpg",
   },
   {
     id: 14,
@@ -113,7 +114,7 @@ const products = [
     price: 79,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/Afrokitchenpic001.jpg",
   },
   {
     id: 15,
@@ -121,19 +122,19 @@ const products = [
     price: 99,
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
-    image: "/img/Afrokitchenpic001.jpg",
+    image: "/img1/peppercorns01.jpg",
   },
 ];
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col fade-in">
       <Header />
 
       <section
         id="home"
-        className="bg-green-50 py-20 mt-17"
-        style={{ backgroundImage: "url('./img/Afrokitchenpic002.jpg')" }}
+        className="  bg-green-50 py-20 mt-17 bg-cover bg-center combined-animation "
+        // style={{ backgroundImage: "url('./img1/badiane01.jpg')" }}
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl text-white font-bold mb-4">
@@ -151,9 +152,10 @@ function Home() {
           </a>
         </div>
       </section>
-      <section id="products" className="py-20">
+      <section id="products" className="py-20 fade-in-section">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product) => (
               <ProductCard key={product.id} product={product} />
