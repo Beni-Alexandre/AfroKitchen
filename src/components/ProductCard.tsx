@@ -1,4 +1,13 @@
 import { Card, CardContent, CardFooter } from "./ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
+
 // import ScrollAnimation from "react-animate-on-scroll";
 interface Product {
   id: number;

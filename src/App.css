@@ -65,3 +65,8 @@ html {
   animation-delay: 1.5s;
 }
 
+/* .colorfultext{
+  background: url('./img1/poivrenoir01.jpg') 0 0/ cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */

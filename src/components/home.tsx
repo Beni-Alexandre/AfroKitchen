@@ -137,7 +137,7 @@ function Home() {
         // style={{ backgroundImage: "url('./img1/badiane01.jpg')" }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl text-white font-bold mb-4">
+          <h1 className="text-4xl text-white font-bold mb-4 colorfultext">
             Welcome to Afro Kitchen
           </h1>
           <p className="text-xl text-white mb-8">
@@ -167,7 +167,7 @@ function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
           <p className="text-xl mb-8">
-            Have questions about our products? We're here to help!
+            Have any queries about ordering? Reach out to us for assistance!
           </p>
           <WhatsAppLink />
         </div>
