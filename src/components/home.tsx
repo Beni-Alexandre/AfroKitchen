@@ -1,6 +1,7 @@
 import Footer from "./footer";
 import Header from "./header";
 import ProductCard from "./ProductCard";
+import TestimonyCards from "./testimonials";
 import WhatsAppLink from "./WhatsAppLink";
 
 const products = [
@@ -11,10 +12,7 @@ const products = [
     quantity: "200g",
     ingredients: "Paprika, Cumin, Thyme, Garlic powder, Ginger, Chili flakes",
     image: "/img1/Afrokitchenpic001.jpg",
-    additionalImages: [
-      "/img1/Afrokitchenpic001.jpg",
-      "/img1/Afrokitchenpic001.jpg",
-    ],
+    additionalImages: ["/img1/Afrokitchenpic001.jpg", "/img1/poivrenoir01.jpg"],
   },
   {
     id: 2,
@@ -104,7 +102,11 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/garlic01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/garlic01.jpg",
+      "/img1/garlic01.jpg",
+      "/img1/badiane01.jpg",
+    ],
   },
   {
     id: 12,
@@ -113,7 +115,11 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/poudre01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/garlic01.jpg",
+      "/img1/garlic01.jpg",
+      "/img1/badiane01.jpg",
+    ],
   },
   {
     id: 13,
@@ -122,7 +128,11 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/badiane01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/garlic01.jpg",
+      "/img1/garlic01.jpg",
+      "/img1/badiane01.jpg",
+    ],
   },
   {
     id: 14,
@@ -131,7 +141,11 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/Afrokitchenpic001.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/garlic01.jpg",
+      "/img1/garlic01.jpg",
+      "/img1/badiane01.jpg",
+    ],
   },
   {
     id: 15,
@@ -140,10 +154,26 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/peppercorns01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/garlic01.jpg",
+      "/img1/garlic01.jpg",
+      "/img1/badiane01.jpg",
+    ],
   },
 ];
+const testimonials = [
+  {
+    id: 1,
+    text: "Afro Kitchen's spices have transformed my cooking! The Jollof Spice Mix is a game-changer, bringing authentic flavors to my kitchen.",
+    name: "Mrs Ama",
+  },
+  {
+    id: 2,
+    text: "I love the variety of seasonings offered by Afro Kitchen. The Suya Seasoning is my absolute favorite - it's like having a taste of home!",
 
+    name: " Mr Kwame",
+  },
+];
 function Home() {
   return (
     <div className="min-h-screen flex flex-col fade-in">
@@ -181,6 +211,22 @@ function Home() {
           </div>
         </div>
       </section>
+      <section id="testimonials" className="bg-gray-100 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Our Customers Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {testimonials.map((testimony) => (
+              <TestimonyCards
+                key={testimony.id}
+                name={testimony.name}
+                text={testimony.text}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="contact" className="bg-gray-100 py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
@@ -190,6 +236,7 @@ function Home() {
           <WhatsAppLink />
         </div>
       </section>
+
       <Footer />
     </div>
   );

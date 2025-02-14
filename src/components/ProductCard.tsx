@@ -1,5 +1,5 @@
 import { Card, CardContent, CardFooter } from "./ui/card";
-
+// import { useState } from "react";
 interface Product {
   id: number;
   name: string;
@@ -11,18 +11,42 @@ interface Product {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
+  // const [showAdditionalImages, setShowAdditionalImages] = useState(false);
+
+  // function toggleAdditionalImages() {
+  //   setShowAdditionalImages(!showAdditionalImages);
+  // }
   return (
-    // <ScrollAnimation animateIn="fadeIn">
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-      <button className="w-full h-48">
-        <img
-          src={product.image}
-          alt={product.name}
-          width={200}
-          height={200}
-          className="w-full object-cover h-48"
-        />
-      </button>
+      {/* <img
+        src={product.additionalImages[0]}
+        alt={product.name}
+        width={200}
+        height={200}
+        className="w-full object-cover h-48"
+      /> */}
+      {/* <button className="w-full h-48" onClick={toggleAdditionalImages}> */}
+      <img
+        src={product.image}
+        alt={product.name}
+        width={200}
+        height={200}
+        className="w-full object-cover h-48"
+      />
+      {/* </button>
+
+      {showAdditionalImages && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          {product.additionalImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${product.name} ${index + 1}`}
+              className="w-full object-cover"
+            />
+          ))}
+        </div>
+      )} */}
 
       <CardContent className="p-4">
         <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
@@ -36,6 +60,5 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-sm text-gray-600">Contact us to order!</p>
       </CardFooter>
     </Card>
-    // </ScrollAnimation>
   );
 }
