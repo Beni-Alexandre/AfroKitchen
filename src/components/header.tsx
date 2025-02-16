@@ -32,34 +32,9 @@ function Header() {
           <button className="md:hidden " onClick={() => showMenu()}>
             <Menu size={24} />
           </button>
-          {/* <div>
-            {isMenuOpen ? (
-              <X size={24} onClick={hideMenu} />
-            ) : (
-              <Menu size={24} onClick={showMenu} />
-            )}
-          </div> */}
         </nav>
       </div>
-      {/* <div
-        className={`${
-          isMenuOpen
-            ? "max-h-screen opacity-100 absolute left"
-            : "max-h-0 opacity-0"
-        } overflow-hidden transition-all duration-1000 ease-in-out md:hidden`}
-      >
-        {" "}
-        {navItems.map((item) => (
-          <a
-            key={item.name}
-            href={item.path}
-            className="hover:text-green-600"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {item.name}
-          </a>
-        ))}
-      </div> */}
+
       <div
         className={`fixed top-0 right-0 h-full bg-green-600 transition-transform duration-1000 ease-in-out transform ${
           isMenuOpen ? "translate-x-0 w-50" : "translate-x-full"

@@ -3,7 +3,6 @@ import * as React from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-// import { useState } from "react";
 interface Product {
   id: number;
   name: string;
@@ -16,21 +15,9 @@ interface Product {
 
 export default function ProductCard({ product }: { product: Product }) {
   const [open, setOpen] = React.useState(false);
-  // const [showAdditionalImages, setShowAdditionalImages] = useState(false);
 
-  // function toggleAdditionalImages() {
-  //   setShowAdditionalImages(!showAdditionalImages);
-  // }
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-      {/* <img
-        src={product.additionalImages[0]}
-        alt={product.name}
-        width={200}
-        height={200}
-        className="w-full object-cover h-48"
-      /> */}
-      {/* <button className="w-full h-48" onClick={toggleAdditionalImages}> */}
       <button className="w-full h-48" onClick={() => setOpen(true)}>
         <img
           src={product.image}
@@ -45,20 +32,6 @@ export default function ProductCard({ product }: { product: Product }) {
         close={() => setOpen(false)}
         slides={product.additionalImages.map((image) => ({ src: image }))}
       />
-      {/* </button>
-
-      {showAdditionalImages && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-          {product.additionalImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`${product.name} ${index + 1}`}
-              className="w-full object-cover"
-            />
-          ))}
-        </div>
-      )} */}
 
       <CardContent className="p-4">
         <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
