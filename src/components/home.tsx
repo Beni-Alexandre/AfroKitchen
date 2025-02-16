@@ -21,7 +21,11 @@ const products = [
     quantity: "150g",
     ingredients: "Peanut powder, Cayenne pepper, Ginger, Garlic, Onion powder",
     image: "/img1/poivrenoir01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 3,
@@ -30,7 +34,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/thym01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/thym01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 4,
@@ -39,7 +48,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/romarin01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/romarin01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 5,
@@ -48,7 +62,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/cannelle01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/cannelle01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 6,
@@ -57,7 +76,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/pimmentrouge01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/pimmentrouge01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 7,
@@ -66,7 +90,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/cannelle01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/cannelle01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 8,
@@ -75,7 +104,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/Afrokitchenpic001.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 9,
@@ -84,7 +118,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/thym01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/thym01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 10,
@@ -93,7 +132,12 @@ const products = [
     quantity: "100g",
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/romarin01.jpg",
-    additionalImages: [],
+    additionalImages: [
+      "/img1/romarin01.jpg",
+      "/img1/poivrenoir01.jpg",
+      "/img1/Afrokitchenpic001.jpg",
+      "/img1/poivrenoir01.jpg",
+    ],
   },
   {
     id: 11,
@@ -103,6 +147,7 @@ const products = [
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/garlic01.jpg",
     additionalImages: [
+      "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/badiane01.jpg",
@@ -116,6 +161,7 @@ const products = [
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/poudre01.jpg",
     additionalImages: [
+      "/img1/poudre01.jpg",
       "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/badiane01.jpg",
@@ -129,6 +175,7 @@ const products = [
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/badiane01.jpg",
     additionalImages: [
+      "/img1/badiane01.jpg",
       "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/badiane01.jpg",
@@ -142,6 +189,7 @@ const products = [
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/Afrokitchenpic001.jpg",
     additionalImages: [
+      "/img1/Afrokitchenpic001.jpg",
       "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/badiane01.jpg",
@@ -155,6 +203,7 @@ const products = [
     ingredients: "Cinnamon, Nutmeg, Cloves, Ginger, Cardamom",
     image: "/img1/peppercorns01.jpg",
     additionalImages: [
+      "/img1/peppercorns01.jpg",
       "/img1/garlic01.jpg",
       "/img1/garlic01.jpg",
       "/img1/badiane01.jpg",

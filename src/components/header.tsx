@@ -29,10 +29,7 @@ function Header() {
             ))}
           </div>
 
-          <button
-            className="md:hidden "
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <button className="md:hidden " onClick={() => showMenu()}>
             <Menu size={24} />
           </button>
           {/* <div>

@@ -1,4 +1,8 @@
 import { Card, CardContent, CardFooter } from "./ui/card";
+import * as React from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 // import { useState } from "react";
 interface Product {
   id: number;
@@ -11,6 +15,7 @@ interface Product {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
+  const [open, setOpen] = React.useState(false);
   // const [showAdditionalImages, setShowAdditionalImages] = useState(false);
 
   // function toggleAdditionalImages() {
@@ -26,12 +31,19 @@ export default function ProductCard({ product }: { product: Product }) {
         className="w-full object-cover h-48"
       /> */}
       {/* <button className="w-full h-48" onClick={toggleAdditionalImages}> */}
-      <img
-        src={product.image}
-        alt={product.name}
-        width={200}
-        height={200}
-        className="w-full object-cover h-48"
+      <button className="w-full h-48" onClick={() => setOpen(true)}>
+        <img
+          src={product.image}
+          alt={product.name}
+          width={200}
+          height={200}
+          className="w-full object-cover h-48"
+        />
+      </button>
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={product.additionalImages.map((image) => ({ src: image }))}
       />
       {/* </button>
 
