@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
+
+import { Link } from "react-router-dom";
 
 const navItems = [
   { name: "Home", path: "#home" },
@@ -28,7 +30,9 @@ function Header() {
               </a>
             ))}
           </div>
-
+          <Link to="/cart">
+            <ShoppingCart size={24} />
+          </Link>
           <button className="md:hidden " onClick={() => showMenu()}>
             <Menu size={24} />
           </button>
