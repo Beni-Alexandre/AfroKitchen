@@ -4,10 +4,10 @@ import { Menu, X, ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", path: "#home" },
-  { name: "Products", path: "#products" },
-  { name: "Testimonials", path: "#testimonials" },
-  { name: "Contact", path: "#contact" },
+  { name: "Home", path: "/" },
+  { name: "Products", path: "/#products" },
+  { name: "Testimonials", path: "/#testimonials" },
+  { name: "Contact", path: "/#contact" },
 ];
 
 function Header() {
@@ -17,21 +17,23 @@ function Header() {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-green-600 ">Afro Kitchen</div>
+        <div className="text-2xl font-bold text-green-600 ">
+          <Link to="/">Afro Kitchen</Link>
+        </div>
         <nav>
           <div className="hidden md:flex space-x-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.path}
+                to={item.path}
                 className="hover:text-green-600"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
-          <Link to="/cart">
-            <ShoppingCart size={24} />
+          <Link to="/cart" className="relative group">
+            <ShoppingCart size={24} className="  hover:text-green-600" />
           </Link>
           <button className="md:hidden " onClick={() => showMenu()}>
             <Menu size={24} />
