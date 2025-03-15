@@ -32,12 +32,14 @@ function Header() {
               </Link>
             ))}
           </div>
-          <Link to="/cart" className="relative group">
-            <ShoppingCart size={24} className="  hover:text-green-600" />
-          </Link>
-          <button className="md:hidden " onClick={() => showMenu()}>
-            <Menu size={24} />
-          </button>
+          <div className="flex items-center space-x-4">
+            <Link to="/cart" className="relative group">
+              <ShoppingCart size={24} className="hover:text-green-600" />
+            </Link>
+            <button className="md:hidden" onClick={() => showMenu()}>
+              <Menu size={24} />
+            </button>
+          </div>
         </nav>
       </div>
 

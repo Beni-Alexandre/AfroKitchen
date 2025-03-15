@@ -2,6 +2,7 @@ import { Card, CardContent, CardFooter } from "./ui/card";
 import * as React from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { ShoppingCart } from "lucide-react";
 
 interface Product {
   id: number;
@@ -41,8 +42,12 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-sm mb-2">Quantity: {product.quantity}</p>
         <p className="text-sm">Ingredients: {product.ingredients}</p>
       </CardContent>
-      <CardFooter className="bg-gray-50 p-4">
+      <CardFooter className="bg-gray-50 p-4 flex justify-between items-center">
         <p className="text-sm text-gray-600">Contact us to order!</p>
+        <button className="bg-green-600 hover:bg-green-700 rounded-sm flex items-center px-2 py-1">
+          <ShoppingCart className="h-4 w-4 mr-2" />
+          Add to Cart
+        </button>
       </CardFooter>
     </Card>
   );
